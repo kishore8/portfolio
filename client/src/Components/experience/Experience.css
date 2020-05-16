@@ -1,0 +1,52 @@
+.companiesExp{
+    width: 30rem;
+    height: 45rem;
+    border: 0.2rem solid #414546;
+    margin: 10rem 5rem;
+    border-radius: 1rem;
+    box-shadow: 6px 8px 6px -6px black;
+}
+
+.exp{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: linear-gradient(120deg, rgb(161, 196, 253) 0%, rgb(194, 233, 251) 100%);
+}
+
+.timeframe{
+    flex: 1 1 30rem;
+}
+.compName{
+    padding: 1rem;
+    text-decoration: underline;
+}
+.compDesignation{
+    padding: 1rem;
+    font-family: pattaya;
+    font-weight: normal;
+}
+
+.compDuration{
+    padding: 1rem;
+    font-family: pattaya;
+    font-weight: normal;
+}
+.compTech{
+    padding: 1rem;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.compList{
+    padding: 1rem;
+}
+.compList li{
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 800px){
+    .companiesExp{
+        margin: 5rem 5rem;
+    }
+}

@@ -1,0 +1,328 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'roboto', sans-serif;
+}
+@font-face {
+  font-family: Poppins;
+  src: url(./fonts/Poppins/Poppins-Regular.ttf) format("opentype");;
+}
+
+@font-face {
+  font-family: greatVibes;
+  src: url(./fonts/Great_Vibes/GreatVibes-Regular.ttf) format("opentype");;
+}
+
+@font-face {
+  font-family: roboto;
+  src: url(./fonts/Roboto/Roboto-Regular.ttf) format("opentype");;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+h1{
+  font-size: 3rem;
+}
+
+li,button,label,input,p{
+  font-size: 1.8rem;
+  list-style: none;
+}
+h2{
+  font-size: 2.4rem;
+}
+h3{
+  font-size: 2rem;
+  font-weight: normal;
+}
+h4,h5{
+  font-size: 1.8rem;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+
+.menu{
+  font-size: 2rem;
+  position:fixed;
+  margin: 1.6rem;
+  cursor: pointer;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 60%;
+  border: none;
+  background-color:#f0f8ff;
+  outline: none;
+  z-index: 999;
+  bottom: 50%;
+  right: 3%;
+  border: 1px solid;
+  animation: nextButton 1s ease-in infinite alternate;
+}
+.menu i{
+  font-size: 3rem;;
+}
+.menuBack{
+  left: 0;
+  bottom: 50%;
+}
+.menu:hover,.menu:active,.menu:focus{
+  background-color:#2dcce0;
+  outline: none;
+}
+
+.content{
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+
+
+
+.dashBoard{
+  height: 100vh;
+  width: 100vw;
+  display:flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  background-color: aliceblue;
+}
+.dashBoardContent{
+  flex: 3 1 30rem;
+}
+
+.techSymbols{
+  flex: 1 1 30rem;
+}
+.intro{
+  width: 50rem;
+  position: absolute;
+  top: 10rem;
+  left: 10rem;
+  height: 50rem;
+  color: darkcyan;
+  text-align: left;
+  
+}
+img{
+  height: 5rem;
+  width: 5rem;
+  margin: 1rem;
+}
+.links{
+  margin-left: 5rem;
+}
+.techPrint{
+  width: 5rem;
+  display: inline-block;
+  text-decoration: underline;
+  font-weight: 400;
+  font-family: pattaya;
+  font-size: 6rem;
+}
+.introName{
+  margin: 3rem 0rem;
+  font-size: 5rem;
+ 
+}
+
+.introData{
+  margin: 2rem 0rem;
+  font-size: 5rem;
+}
+
+#leaf1{
+  -webkit-animation: plant 2s ease infinte alternate;
+  animation: plant 2s ease infinite alternate-reverse;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+#leaf2{
+  -webkit-animation: plant 1.5s ease infinte alternate;
+  animation: plant 1.5s ease infinite alternate-reverse;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+#Vector_8,#Vector_9,#Vector_10,#Vector_11,#Vector_12,#Vector_13,
+#Vector_14,#Vector_15,#Vector_16,#Vector_17,#Vector_18,#Vector_19{
+  -webkit-animation: me 1.5s ease infinte alternate;
+  animation: me 1.5s ease infinite alternate;
+  transform-origin: bottom;
+}
+
+#heat{
+  -webkit-animation: coffee 1.5s ease infinte alternate;
+  animation: coffee 1.5s ease infinite alternate;
+}
+
+@keyframes me{
+  from{
+    transform: rotateZ(-5deg);
+  }
+  to{
+    transform: rotateZ(5deg);
+  } 
+}
+
+@keyframes coffee{
+  from{
+    transform: translateY(0%);
+  }
+  to{
+    transform: translateY(-3%)
+  } 
+}
+
+
+@keyframes plant{
+  from{
+    transform: rotate(-5deg);
+  }
+  to{
+    transform: rotate(5deg)
+  }
+}
+
+@keyframes nextButton{
+  0%{
+    transform:scale(1.0) 
+   }
+  100%{
+    transform: scale(1.2)
+  }
+}
+
+@media screen and (max-width: 800px){
+  svg{
+    position: absolute;
+    top: 20rem;
+    width: 100vw;
+  }
+  .intro{
+    position: unset;
+    margin:10rem 0rem 0rem 2rem;
+  }
+  .dashBoard{
+    padding: 1rem;
+  }
+  .links{
+    margin-left: 2rem;
+  }
+  .introName{
+    margin: 2rem 0rem;
+    font-size: 3rem;
+  }
+  .introData{
+    font-size: 3rem;
+  }
+  .techPrint{
+    font-size: 3rem;
+  }
+}
+
+
+@media screen and (min-width:768px) and (max-width: 800px){
+  svg{
+    position: absolute;
+    top: 0rem;
+    width: 100vw;
+  }
+  .techPrint{
+    font-size: 2.5rem;
+  }
+  
+}
+
+.mainContent{
+  background-color: aliceblue;
+}
+
+.techStack{
+  height: 100vh;
+  width: 100vw;
+  display:flex;
+  flex-wrap: wrap;
+  background-color: aliceblue;
+}
+.techBlock{
+  justify-content: center;
+  flex: 1 1 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 30rem;
+  
+}
+
+.techScore{
+  position: relative;
+	width: 15rem;
+	height: 15rem;
+	border-radius: 50%;
+  
+  /* animation: score 1.5s ease-in-out 2s; */
+  
+}
+.techScore::after{
+  content:'';
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  left: 0;
+  border-radius: 50%;
+  border: 0.75rem solid #008b8b;
+  animation: rotate2 2s ease-in-out;
+}
+.techBlock h6{
+  position: absolute;
+  top: 6rem;
+  left: 6rem;
+  font-size: 4rem;
+  text-align: center;
+}
+.techBlock h5{
+  margin-left: 1rem;
+  padding: 1rem;
+  text-decoration: underline;
+  font-size: 2rem;
+  color: #008b8b;
+}
+
+@keyframes rotate2 {
+  0%{
+    transform: rotate(0deg);
+    border-top-color: #008b8b;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  50%{
+    transform: rotate(80deg);
+    border-top-color: #008b8b;
+    border-right-color: #008b8b;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  75%{
+    transform: rotate(180deg);
+    border-top-color: #008b8b;
+    border-right-color: #008b8b;
+    border-bottom-color: #008b8b;
+    border-left-color: transparent;
+  }
+  100% {
+    transform: rotate(280deg);
+    border-top-color: #008b8b;
+    border-right-color: #008b8b;
+    border-bottom-color: #008b8b;
+    border-left-color: #008b8b;
+  }
+}

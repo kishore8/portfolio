@@ -1,0 +1,68 @@
+.contact{
+    background-color: aliceblue;
+    width: 100vw;
+    height: 100vh;
+}
+.aboutMeContent{
+    padding: 7rem;
+    width: 100%;
+    height: 80vh;
+}
+.logo{
+    width: 18rem;
+    height: 25rem;
+    position: absolute;
+    top: 30rem;
+    padding: 2rem;
+    right: 10%;
+}
+.about{
+    margin-top: 5rem;
+}
+.aboutDetails{
+    text-align: left;
+    width: 80%;
+}
+.aboutDetails h1,.aboutDetails p,.aboutDetails label{
+    padding: 1rem;
+}
+.aboutDetails h1{
+    color: darkcyan;
+    text-decoration: underline;
+}
+.aboutDetails a{
+    text-decoration: underline;
+    color: #008b8b;
+    font-size: 2rem;
+}
+.connectDetails{
+    font-size: 2rem;
+    padding: 2rem 0rem;
+}
+
+.expDetails{
+    display: flex;
+    flex-wrap: wrap;
+}
+.xebia,.PK,.CTS{
+    width: 30rem;
+    color: darkcyan;
+height: 15rem;
+border: 1px solid;
+flex: 1 1 30rem;
+margin: 1rem;
+text-align: center;
+align-items: center;
+display: flex;
+justify-content: center;
+flex-direction: column;
+border-right: 0.5rem solid;
+border-bottom: 0.4rem solid;
+}
+.expDetails h5,.expDetails h3{
+    padding: 1rem;
+}
+.expDetails h5{
+    font-size: 2.8rem;
+}
+
